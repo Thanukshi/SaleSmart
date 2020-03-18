@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/parchase_gradle"
+    tools:context=".PurchaseItem">
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="310dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/text_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Address"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/editText8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Headtx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purchase Item"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="309dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/text_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Item Name"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/editText6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="311dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/text_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Customer Name"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/editText7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="310dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/text_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Quantity"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/editText11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="312dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/text_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Price"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="149dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_bg"
+        android:text="Add"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="146dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_bg"
+        android:text="Clear"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="313dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/btn_bg"
+        android:text="VIEW ALL PURCHASES"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/parchase_gradle"
+    tools:context=".EditPurchased">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Change Purchased Items"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.197" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="340dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/text_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Purchase ID"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="334dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/text_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Item Name"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="335dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/text_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Customer Name"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/editText5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="335dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/text_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Address"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/editText9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="334dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/text_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Price"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/editText10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="333dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="212dp"
+        android:background="@drawable/text_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="  Quantity"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="173dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="36dp"
+        android:background="@drawable/btn_bg"
+        android:text="UPDATE"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText10"
+        app:layout_constraintVertical_bias="0.272" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="113dp"
+        android:layout_height="33dp"
+        android:background="@drawable/btn_bg"
+        android:text="DELETE"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.585"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/editText10"
+        app:layout_constraintVertical_bias="0.28" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
