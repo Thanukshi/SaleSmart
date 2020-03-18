@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/parchase_gradle"
+    android:background="@drawable/login_gradle"
     tools:context=".PurchaseItem">
 
     <EditText
@@ -26,6 +26,7 @@
         android:id="@+id/Headtx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="dra"
         android:text="Purchase Item"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
