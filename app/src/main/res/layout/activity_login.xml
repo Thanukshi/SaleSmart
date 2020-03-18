@@ -160,6 +160,7 @@
                 android:background="@color/white" />
 
             <TextView
+                android:id="@+id/Text4Login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -195,10 +196,12 @@
                 android:background="@color/white" />
 
             <TextView
+                android:id="@+id/Text5Login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="130dp"
                 android:text="Sign UP"
+                android:textStyle="bold"
                 android:textColor="@color/white"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:layout_centerHorizontal="true"
