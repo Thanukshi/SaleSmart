@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="search">Search</dimen>
+    <dimen name="search"></dimen>
 </resources>
