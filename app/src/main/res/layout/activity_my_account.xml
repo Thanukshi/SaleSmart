@@ -1,9 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyAccount">
+    android:background="@drawable/login_gradle"
+    tools:context=".Register">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv1R"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Thanukshi Wickramasinghe"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-condensed-medium"/>
+
+        <ImageView
+            android:id="@+id/imgV1R"
+            android:layout_below="@+id/tv1R"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_image_white_24dp"/>
+
+        <LinearLayout
+            android:id="@+id/lL1Reg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/imgV1R"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/TextView1Reg"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_bg"
+                android:drawableStart="@drawable/ic_person_white_24dp"
+                android:drawableLeft="@drawable/ic_image_white_24dp"
+                android:fontFamily="sans-serif-light"
+                android:hint="  Thanukshi Wickramasinghe"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/TextView2Reg"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_bg"
+                android:drawableStart="@drawable/ic_date_range_black_24dp"
+                android:drawableLeft="@drawable/ic_person_white_24dp"
+                android:fontFamily="sans-serif-light"
+                android:hint="  1994-07-24"
+                android:inputType="date"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/TextView3eg"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_bg"
+                android:drawableStart="@drawable/ic_phone_black_24dp"
+                android:drawableLeft="@drawable/ic_phone_black_24dp"
+                android:fontFamily="sans-serif-light"
+                android:hint="  076 - 2030145"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/TextView4Reg"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_bg"
+                android:drawableStart="@drawable/ic_location_on_black_24dp"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                android:fontFamily="sans-serif-light"
+                android:hint="  Kandy Rd, Malabe"
+                android:inputType="date"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/TextView5Reg"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_bg"
+                android:drawableStart="@drawable/ic_email_black_24dp"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:fontFamily="sans-serif-light"
+                android:hint="  thanu12345@gmail.com"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/TextView6Reg"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_bg"
+                android:drawableStart="@drawable/ic_lock_black_24dp"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:fontFamily="sans-serif-light"
+                android:hint="  1234"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18sp" />
+
+
+
+                <Button
+                    android:id="@+id/btn1Reg"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/btn_bg"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    android:text="Home"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
