@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context=".Insertdelivery">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -31,7 +32,7 @@
             android:layout_marginRight="92dp"
             android:layout_marginBottom="1dp"
             android:text="@string/pydelivery"
-            android:textColor="#2CAA31"
+            android:textColor="#FFEB3B"
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/imageView3"
             app:layout_constraintEnd_toEndOf="parent"
