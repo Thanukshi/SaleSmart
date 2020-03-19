@@ -1,4 +1,4 @@
-package com.example.salesmartnew;
+package com.example.salesmart;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatActivity;
