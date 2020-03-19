@@ -1,13 +1,25 @@
 package com.example.salesmart;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.TextPaint;
+import android.text.method.LinkMovementMethod;
+import android.text.style.ClickableSpan;
+import android.util.Log;
 import android.view.View;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 public class Login extends AppCompatActivity {
+
+    TextView textV5;
 
     RelativeLayout relLay1, relLay2, relLay3;
     Handler handler = new Handler();
@@ -31,6 +43,33 @@ public class Login extends AppCompatActivity {
 
         handler.postDelayed( runnable, 1000 );
 
+        textV5 = findViewById( R.id.Text5Login );
+        textV5.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent sign = new Intent( Login.this,Register.class );
+                startActivity( sign );
+            }
+        } );
+
+       String text = "Sign UP";
+
+        SpannableString sp = new SpannableString( text );
+        ClickableSpan clickableSpan1  = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View view) {
+
+            }
+
+            @Override
+            public void updateDrawState(@NonNull TextPaint ds) {
+                super.updateDrawState( ds );
+                ds.setColor( Color.BLUE );
+            }
+        };
+        sp.setSpan( clickableSpan1, 0, 7, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE );
+        textV5.setText( sp );
+        textV5.setMovementMethod( LinkMovementMethod.getInstance() );
 
     }
 }
