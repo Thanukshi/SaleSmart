@@ -1,9 +1,7 @@
 <resources>
     <string name="app_name">SaleSmart</string>
     <string name="topic">SaleSmart</string>
-        <string name="app_name">SaleSmart</string>
-    <string name="topic">SaleSmart</string>
-    <string name="addProduct">Add Product</string>
+     <string name="addProduct">Add Product</string>
     <string name="name">Name...</string>
     <string name="description">Description</string>
     <string name="status">Status</string>
