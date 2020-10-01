@@ -22,6 +22,7 @@ public class Login extends AppCompatActivity {
     TextView textV5;
 
     RelativeLayout relLay1, relLay2, relLay3;
+//create a handler
     Handler handler = new Handler();
     Runnable runnable = new Runnable() {
         @Override
